@@ -1,0 +1,72 @@
+
+.die-container {
+    height: 50px;
+    width: 50px;
+}
+
+.die {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+}
+
+.die-roller {
+    height: 50px;
+    width: 50px;
+    -webkit-transform-style: preserve-3d;
+}
+
+.die-face-1, .die-face-2, .die-face-3, .die-face-4, .die-face-5, .die-face-6 {
+    background-color: white;
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    -webkit-backface-visibility: hidden;
+    font-size: 75px;
+    line-height: 60%;
+    text-align: center;
+}
+
+.die-face-6 {
+    -webkit-transform: rotateY(180deg) translateZ(25px);
+}
+
+.die-face-5 {
+    -webkit-transform: rotateY(-90deg) translateZ(25px);
+}
+
+.die-face-4 {
+    -webkit-transform: rotateY(-90deg) rotateX(-90deg) translateZ(25px);
+}
+
+.die-face-3 {
+    -webkit-transform: rotateY(90deg) rotateX(90deg) translateZ(25px);
+}
+
+.die-face-2 {
+    -webkit-transform: rotateY(90deg) translateZ(25px);
+}
+
+.die-face-1 {
+    -webkit-transform: rotateY(0deg) translateZ(25px);
+}
+
+.die-roll-2 {
+    -webkit-transform: rotateY(-90deg);
+}
+
+.die-roll-3 {
+    -webkit-transform: rotateX(-90deg) rotateY(-90deg);
+}
+
+.die-roll-4 {
+    -webkit-transform: rotateX(90deg) rotateY(90deg);
+}
+
+.die-roll-5 {
+    -webkit-transform: rotateY(90deg);
+}
+
+.die-roll-6 {
+    -webkit-transform: rotateY(180deg);
+}
+
