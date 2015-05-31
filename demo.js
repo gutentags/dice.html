@@ -7,8 +7,5 @@ function Demo(body, scope) {
 Demo.prototype.add = function add(component, id, scope) {
     if (id !== "this") {
         component.roll(500, Math.random() * 6);
-        requestAnimationFrame(function () {
-            component.draw();
-        });
     }
 };

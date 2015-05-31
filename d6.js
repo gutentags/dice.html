@@ -20,6 +20,9 @@ D6.prototype.roll = function (ms, nextValue) {
         self.timeoutHandle = null;
     }, ms);
     this.period = ms;
+    requestAnimationFrame(function () {
+        self.draw();
+    });
 };
 
 D6.prototype.draw = function () {
